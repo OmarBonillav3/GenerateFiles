@@ -6,6 +6,7 @@ ya que piden que subamos algunos archivos y aveces no tenemos, asi que por esto 
 Los PDF les aparecera en en archivo llamado: archivos
 
 ## Instalacion y ejecucion
+Para usar debes antes instalado node.js https://nodejs.org/en
  ```bash
 #Instamos dependencias
 
