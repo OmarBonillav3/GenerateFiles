@@ -11,13 +11,10 @@ Los PDF les aparecera en en archivo llamado: archivos
 
 npm install
 
-```bash
-
 #Ejecucion del script
 
 node .
 
-```bash
 # Tambien lo puedes ejecutar como:
 
 node index.js
