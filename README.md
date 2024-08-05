@@ -8,7 +8,7 @@ Los PDF les aparecera en en archivo llamado: archivos
 Para usarlo, debes tener instalado Node.js. Puedes descargarlo desde https://nodejs.org/en.
 
 ```bash
-# 1. clonar el Git
+# 1. Clonar el Git
 
 git clone https://github.com/OmarBonillav3/GenerateFiles.git
 ```
