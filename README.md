@@ -7,15 +7,26 @@ Los PDF les aparecera en en archivo llamado: archivos
 
 ## Instalacion y ejecucion
 Para usar debes antes instalado node.js https://nodejs.org/en
+
+```bash
+#Debes clonar el Git
+
+git clone https://github.com/OmarBonillav3/GenerateFiles.git
+```
+```bash
+#Te dirijes a la carpeta
+
+cd GenerateFiles
+```
+
  ```bash
 #Instamos dependencias
 
 npm install
+```
 
+```bash
 #Ejecucion del script
 
-node .
-
-# Tambien lo puedes ejecutar como:
-
 node index.js
+```
