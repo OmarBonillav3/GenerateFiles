@@ -14,19 +14,22 @@ const imagenesStock = [
   "https://picsum.photos/400/300?random=2",
   "https://picsum.photos/400/300?random=3",
   "https://picsum.photos/400/300?random=4",
+  "https://picsum.photos/400/300?random=5",
+  "https://picsum.photos/400/300?random=6",
+  "https://picsum.photos/400/300?random=7",
+  "https://picsum.photos/400/300?random=8",
+  "https://picsum.photos/400/300?random=9",
+  "https://picsum.photos/400/300?random=10",
+  "https://picsum.photos/400/300?random=11",
+  "https://picsum.photos/400/300?random=12",
+  "https://picsum.photos/400/300?random=13",
 
-  // Placeholder
-  "https://via.placeholder.com/400x300/4CAF50/FFFFFF?text=Educación",
-  "https://via.placeholder.com/400x300/2196F3/FFFFFF?text=Aprendizaje",
-  "https://via.placeholder.com/400x300/FF9800/FFFFFF?text=Conocimiento",
 ];
 
-// Función para obtener una imagen aleatoria
 function obtenerImagenAleatoria() {
   return imagenesStock[Math.floor(Math.random() * imagenesStock.length)];
 }
 
-// Función para obtener múltiples imágenes
 function obtenerImagenes(cantidad = 3) {
   const imagenes = [];
   for (let i = 0; i < cantidad; i++) {

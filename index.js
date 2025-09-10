@@ -7,7 +7,7 @@
   const axios = require("axios");
   const chalk = await import("chalk");
 
-  // Importar las constantes de Preguntas.js
+  // Importar las constantes para generar archivos
   const { preguntasRespuestas } = require("./src/P&R");
   const { obtenerImagenes } = require("./src/IMG");
   const { generarNombreArchivo } = require("./src/NAME");
@@ -69,7 +69,6 @@
         .sort(() => Math.random() - 0.5)
         .slice(0, 30 + Math.floor(Math.random() * 20));
 
-      // --- Crear PDF ---
       const pdfDoc = new PDFDocument({
         margins: { top: 50, bottom: 50, left: 50, right: 50 },
         info: {
@@ -101,9 +100,7 @@
         const yBefore = pdfDoc.y;
 
         pdfDoc.image(imagenBuffer, x, yBefore, options);
-
-        // Ajusta pdfDoc.y al final de la imagen
-        pdfDoc.y = yBefore + options.fit[1] + 20; // 👈 20 px de margen extra
+        pdfDoc.y = yBefore + options.fit[1] + 20;
       }
 
       // --- Encabezado ---
@@ -267,7 +264,5 @@
   if (!fs.existsSync(path.join(__dirname, "archivos"))) {
     fs.mkdirSync(path.join(__dirname, "archivos"));
   }
-
-  // Mostrar menú al iniciar
   mostrarMenu();
 })();
